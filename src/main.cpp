@@ -77,6 +77,8 @@ cout << "\Enter your start point and goal point(between 0 to 100)" << "\n";
     RouteModel model{osm_data};
 
 // TODO check if the input is out of range 
+
+
     // Create RoutePlanner object and perform A* search.
     RoutePlanner route_planner{model, fStartx, fStartY, fGoalX, fGoalY};
     route_planner.AStarSearch();
